@@ -6,7 +6,7 @@
         <field name="VAR">Grip</field>
         <value name="VALUE">
           <block type="math_number" id="3">
-            <field name="NUM">0</field>
+            <field name="NUM">1</field>
           </block>
         </value>
         <next>
@@ -14,7 +14,7 @@
             <field name="VAR">total</field>
             <value name="VALUE">
               <block type="math_number" id="5">
-                <field name="NUM">0</field>
+                <field name="NUM">1</field>
               </block>
             </value>
             <next>
