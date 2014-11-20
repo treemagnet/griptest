@@ -10,86 +10,86 @@
           </block>
         </value>
         <next>
-          <block type="variables_set" id="94" inline="true">
+          <block type="variables_set" id="4" inline="true">
             <field name="VAR">total</field>
             <value name="VALUE">
-              <block type="math_number" id="117">
+              <block type="math_number" id="5">
                 <field name="NUM">0</field>
               </block>
             </value>
             <next>
-              <block type="controls_whileUntil" id="110" inline="false">
+              <block type="controls_whileUntil" id="6" inline="false">
                 <field name="MODE">WHILE</field>
                 <value name="NUMBER">
-                  <block type="logic_compare" id="132" inline="true">
+                  <block type="logic_compare" id="7" inline="true">
                     <field name="OP">LTE</field>
                     <value name="A">
-                      <block type="variables_get" id="158">
+                      <block type="variables_get" id="8">
                         <field name="VAR">total</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_number" id="146">
+                      <block type="math_number" id="9">
                         <field name="NUM">100</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="controls_whileUntil" id="4" inline="false">
+                  <block type="controls_whileUntil" id="10" inline="false">
                     <field name="MODE">WHILE</field>
                     <value name="NUMBER">
-                      <block type="logic_compare" id="5" inline="true">
+                      <block type="logic_compare" id="11" inline="true">
                         <field name="OP">LTE</field>
                         <value name="A">
-                          <block type="variables_get" id="298">
+                          <block type="variables_get" id="12">
                             <field name="VAR">Grip</field>
                           </block>
                         </value>
                         <value name="B">
-                          <block type="math_number" id="7">
+                          <block type="math_number" id="13">
                             <field name="NUM">10</field>
                           </block>
                         </value>
                       </block>
                     </value>
                     <statement name="DO">
-                      <block type="expansion_gripper" id="8" inline="true">
+                      <block type="expansion_gripper" id="14" inline="true">
                         <value name="NUMBER">
-                          <block type="math_arithmetic" id="9" inline="true">
+                          <block type="math_arithmetic" id="15" inline="true">
                             <field name="OP">MULTIPLY</field>
                             <value name="A">
-                              <block type="math_number" id="10">
+                              <block type="math_number" id="16">
                                 <field name="NUM">1</field>
                               </block>
                             </value>
                             <value name="B">
-                              <block type="math_number" id="11">
+                              <block type="math_number" id="17">
                                 <field name="NUM">10</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <next>
-                          <block type="robot_delay" id="12" inline="true">
+                          <block type="robot_delay" id="18" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="13">
+                              <block type="math_number" id="19">
                                 <field name="NUM">500</field>
                               </block>
                             </value>
                             <next>
-                              <block type="variables_set" id="14" inline="true">
+                              <block type="variables_set" id="20" inline="true">
                                 <field name="VAR">Grip</field>
                                 <value name="VALUE">
-                                  <block type="math_arithmetic" id="15" inline="true">
+                                  <block type="math_arithmetic" id="21" inline="true">
                                     <field name="OP">ADD</field>
                                     <value name="A">
-                                      <block type="variables_get" id="16">
+                                      <block type="variables_get" id="22">
                                         <field name="VAR">Grip</field>
                                       </block>
                                     </value>
                                     <value name="B">
-                                      <block type="math_number" id="17">
+                                      <block type="math_number" id="23">
                                         <field name="NUM">1</field>
                                       </block>
                                     </value>
@@ -102,60 +102,60 @@
                       </block>
                     </statement>
                     <next>
-                      <block type="controls_whileUntil" id="60" inline="false">
+                      <block type="controls_whileUntil" id="24" inline="false">
                         <field name="MODE">WHILE</field>
                         <value name="NUMBER">
-                          <block type="logic_compare" id="61" inline="true">
+                          <block type="logic_compare" id="25" inline="true">
                             <field name="OP">GTE</field>
                             <value name="A">
-                              <block type="variables_get" id="62">
+                              <block type="variables_get" id="26">
                                 <field name="VAR">Grip</field>
                               </block>
                             </value>
                             <value name="B">
-                              <block type="math_number" id="63">
+                              <block type="math_number" id="27">
                                 <field name="NUM">0</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <statement name="DO">
-                          <block type="expansion_gripper" id="64" inline="true">
+                          <block type="expansion_gripper" id="28" inline="true">
                             <value name="NUMBER">
-                              <block type="math_arithmetic" id="65" inline="true">
+                              <block type="math_arithmetic" id="29" inline="true">
                                 <field name="OP">MULTIPLY</field>
                                 <value name="A">
-                                  <block type="math_number" id="66">
+                                  <block type="math_number" id="30">
                                     <field name="NUM">1</field>
                                   </block>
                                 </value>
                                 <value name="B">
-                                  <block type="math_number" id="67">
+                                  <block type="math_number" id="31">
                                     <field name="NUM">10</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <next>
-                              <block type="robot_delay" id="68" inline="true">
+                              <block type="robot_delay" id="32" inline="true">
                                 <value name="DELAY">
-                                  <block type="math_number" id="69">
+                                  <block type="math_number" id="33">
                                     <field name="NUM">500</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="variables_set" id="70" inline="true">
+                                  <block type="variables_set" id="34" inline="true">
                                     <field name="VAR">Grip</field>
                                     <value name="VALUE">
-                                      <block type="math_arithmetic" id="71" inline="true">
+                                      <block type="math_arithmetic" id="35" inline="true">
                                         <field name="OP">MINUS</field>
                                         <value name="A">
-                                          <block type="variables_get" id="72">
+                                          <block type="variables_get" id="36">
                                             <field name="VAR">Grip</field>
                                           </block>
                                         </value>
                                         <value name="B">
-                                          <block type="math_number" id="73">
+                                          <block type="math_number" id="37">
                                             <field name="NUM">1</field>
                                           </block>
                                         </value>
@@ -168,54 +168,54 @@
                           </block>
                         </statement>
                         <next>
-                          <block type="variables_set" id="159" inline="true">
+                          <block type="variables_set" id="38" inline="true">
                             <field name="VAR">total</field>
                             <value name="VALUE">
-                              <block type="math_arithmetic" id="160" inline="true">
+                              <block type="math_arithmetic" id="39" inline="true">
                                 <field name="OP">ADD</field>
                                 <value name="A">
-                                  <block type="variables_get" id="161">
+                                  <block type="variables_get" id="40">
                                     <field name="VAR">total</field>
                                   </block>
                                 </value>
                                 <value name="B">
-                                  <block type="math_number" id="162">
+                                  <block type="math_number" id="41">
                                     <field name="NUM">1</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <next>
-                              <block type="oled_setcursor" id="276" inline="true">
+                              <block type="oled_setcursor" id="42" inline="true">
                                 <value name="STARTX">
-                                  <block type="math_number" id="277">
+                                  <block type="math_number" id="43">
                                     <field name="NUM">20</field>
                                   </block>
                                 </value>
                                 <value name="STARTY">
-                                  <block type="math_number" id="278">
+                                  <block type="math_number" id="44">
                                     <field name="NUM">10</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="oled_drawtext" id="248">
+                                  <block type="oled_drawtext" id="45">
                                     <field name="TEXT">CYCLES DONE</field>
                                     <next>
-                                      <block type="oled_setcursor" id="205" inline="true">
+                                      <block type="oled_setcursor" id="46" inline="true">
                                         <value name="STARTX">
-                                          <block type="math_number" id="212">
+                                          <block type="math_number" id="47">
                                             <field name="NUM">20</field>
                                           </block>
                                         </value>
                                         <value name="STARTY">
-                                          <block type="math_number" id="220">
+                                          <block type="math_number" id="48">
                                             <field name="NUM">26</field>
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="oled_drawnumber" id="275" inline="true">
+                                          <block type="oled_drawnumber" id="49" inline="true">
                                             <value name="NUMBER">
-                                              <block type="variables_get" id="285">
+                                              <block type="variables_get" id="50">
                                                 <field name="VAR">total</field>
                                               </block>
                                             </value>
@@ -234,7 +234,7 @@
                   </block>
                 </statement>
                 <next>
-                  <block type="expansion_servopower" id="18">
+                  <block type="expansion_servopower" id="51">
                     <field name="SERVO">OFF</field>
                   </block>
                 </next>
