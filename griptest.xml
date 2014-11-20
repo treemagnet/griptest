@@ -1,1 +1,88 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="expansion_servopower" id="5" x="17" y="18">
+    <field name="SERVO">ON</field>
+    <next>
+      <block type="variables_set" id="3" inline="true">
+        <field name="VAR">e</field>
+        <value name="VALUE">
+          <block type="math_number" id="4">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_whileUntil" id="6" inline="false">
+            <field name="MODE">WHILE</field>
+            <value name="NUMBER">
+              <block type="logic_compare" id="7" inline="true">
+                <field name="OP">LTE</field>
+                <value name="A">
+                  <block type="variables_get" id="8">
+                    <field name="VAR">e</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="9">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="expansion_gripper" id="10" inline="true">
+                <value name="NUMBER">
+                  <block type="math_arithmetic" id="11" inline="true">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <block type="math_number" id="12">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="13">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="robot_delay" id="14" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="15">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="16" inline="true">
+                        <field name="VAR">e</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="17" inline="true">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <block type="variables_get" id="32">
+                                <field name="VAR">e</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="18">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="expansion_servopower" id="38">
+                <field name="SERVO">OFF</field>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
